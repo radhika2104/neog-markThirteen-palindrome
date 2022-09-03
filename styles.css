@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+:root{
+    --off-white:#fefce8;
+    --primary-text: #164e63;
+}
+
+body{
+    font-family: 'Recursive', sans-serif;
+    color: var(--primary-text);
+    background-image: url(glitter.jpg);
+    margin: 0px .4px 0px 0.4px;
+    /* Comic Sans MS, Comic Sans, cursive; */
+    /* Verdana, sans-serif; */
+    
+}
+main{
+    margin: auto;
+    text-align: center;
+    width: 40rem;
+    height: 25rem;
+    border-radius: 3rem;
+    background-color: var(--off-white);
+    
+
+}
+
+.gif-container{
+    margin: auto;
+    text-align: center;
+    height: 18rem;
+
+}
+.hero{
+    margin-top: 2rem;
+    height: 15rem;
+    border-radius: 8rem;
+    border: 2px solid var(--off-white);
+
+}
+
+
+ .link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+   
+ }
+
+
+
+ .btn-primary {
+    background-color: var(--primary-text);
+    color: var(--off-white);
+    border-radius: 0.5rem;  
+    padding: 0.8rem 1rem;
+    border: none;
+    font-size: x-large;
+    margin: 2rem 1rem;
+ }
+
+
+label{
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+ }
+
+ h1{
+    font-size: 1.7rem;
+ }
+ 
+
+ .list-item-inline {
+    display: inline;
+    padding: 0rem 0rem 0rem 0rem;
+ }
+
+ .list-non-bullet {
+    list-style: none;
+ }
+
+
+
+
+.footer .link {
+    color: var(--primary-text);
+    text-decoration: none;
+    display: inline;
+    
+}
+
+.footer ul{
+    display: inline;
+    padding-inline-start: 0px;
+}
+
+.ul-section{
+    padding-inline-start: 0px;
+}
+
+.footer {
+    margin-top: 1rem;
+    color: var(--primary-text);
+    background-color: var(--off-white);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer-header {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.footer .linkedinlogo{
+    width: 35px;
+}
+
+.footer .twitterlogo{
+    width: 50px;
+}
+
+.footer .githublogo{
+    width: 35px;
+    position: relative; bottom: 1px;
+}
+
+#mesage{
+    margin-top: 0rem;
+    height: 6rem;
+   
+    text-align: center;
+}
