@@ -5,19 +5,29 @@
 }
 
 body{
+    height: 100vh;
+    margin: 0;
     font-family: 'Recursive', sans-serif;
     color: var(--primary-text);
     background-image: url(glitter.jpg);
-    margin: 0px .4px 0px 0.4px;
+    display:flex; 
+    flex-direction:column; 
     /* Comic Sans MS, Comic Sans, cursive; */
     /* Verdana, sans-serif; */
     
+}
+
+#birthdate{
+    font-size: large;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
 }
 main{
     margin: auto;
     text-align: center;
     width: 40rem;
-    height: 25rem;
+    height: 24rem;
     border-radius: 3rem;
     background-color: var(--off-white);
     
@@ -31,7 +41,7 @@ main{
 
 }
 .hero{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     height: 15rem;
     border-radius: 8rem;
     border: 2px solid var(--off-white);
@@ -54,7 +64,8 @@ main{
     padding: 0.8rem 1rem;
     border: none;
     font-size: x-large;
-    margin: 2rem 1rem;
+    margin: 2rem auto;
+    display: block;
  }
 
 
@@ -93,15 +104,15 @@ label{
     padding-inline-start: 0px;
 }
 
-.ul-section{
-    padding-inline-start: 0px;
-}
+
 
 .footer {
+    width: 100vw;
     margin-top: 1rem;
+    
     color: var(--primary-text);
     background-color: var(--off-white);
-    padding: 0.5rem;
+    padding: 0rem 0.5rem 1rem 0.5rem;
     text-align: center;
 }
 
@@ -114,21 +125,67 @@ label{
 
 
 .footer .linkedinlogo{
-    width: 35px;
+    width: 2rem;
 }
 
 .footer .twitterlogo{
-    width: 50px;
+    width: 3rem;
 }
 
 .footer .githublogo{
-    width: 35px;
-    position: relative; bottom: 1px;
+    width: 2rem;
+    
 }
 
-#mesage{
+#message{
     margin-top: 0rem;
     height: 6rem;
-   
     text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+    
 }
+
+@media (max-width:1300px){
+
+    body{
+        height: 104.5vh;
+        margin: 0;
+        font-family: 'Recursive', sans-serif;
+        color: var(--primary-text);
+        background-image: url(glitter.jpg);
+        display:flex; 
+        flex-direction:column; 
+        /* Comic Sans MS, Comic Sans, cursive; */
+        /* Verdana, sans-serif; */
+        
+    }
+    main{
+        margin: auto;
+        text-align: center;
+        width: 95%;
+        height: 25rem;
+        border-radius: 3rem;
+        background-color: var(--off-white);
+        
+    
+    }
+    .gif-container{
+        margin: auto;
+        text-align: center;
+        height: 11rem;
+    
+    }
+    .hero{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 10rem;
+        border-radius: 8rem;
+        border: 2px solid var(--off-white);
+    
+    }
+
+}
+
+

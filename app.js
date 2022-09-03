@@ -193,26 +193,31 @@ function findNearestPalindrome(datestr) {
 function clickHandler() {
     // Use datestring to convert to all dateformats we want to check for palindrome
     giffy.style.display = 'block';
+    messageArea.style.display = 'none';
     var datestr = birthdate.value
     
-    if (datestr === '') {
+    if (datestr.length === 0) {
         // No date entered by user
         messageArea.innerText = 'Please enter a date to check for palindrome!'
-        return false;
-    }
-    var dateformatArray = convertToStringFormat(datestr)
-    var isPalindrome = checkPalindrome(dateformatArray)
-    setTimeout(function() {
-        if (isPalindrome) {
-        messageArea.innerText = 'Yaye! Your birthday is a palindrome!'
-        return true;
-        } 
-        else {
-            // find Nearest Palindrome -from previous or next dates
-            findNearestPalindrome(datestr);
-        }
         giffy.style.display = 'none';
-    }, 3000);
+        messageArea.style.display = 'block';
+    }
+    else{
+        var dateformatArray = convertToStringFormat(datestr)
+        var isPalindrome = checkPalindrome(dateformatArray)
+        setTimeout(function() {
+            if (isPalindrome) {
+            messageArea.innerText = 'Yaye! Your birthday is a palindrome!'
+            return true;
+            } 
+            else {
+                // find Nearest Palindrome -from previous or next dates
+                findNearestPalindrome(datestr);
+            }
+            giffy.style.display = 'none';
+            messageArea.style.display = 'block';
+        }, 3000);
+    }
     
 }
 
