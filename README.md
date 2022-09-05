@@ -2,7 +2,7 @@
 
 This is a project created in Neo G camp, LevelZero for markThirteen.
 
-This is an which lets the user know if their birthdate is a palindrome, if not, it shows the nearest date to the user which is a palindrome.
+This is an app which lets the user know if their birthdate is a palindrome, if not, it shows the nearest date to the user which is a palindrome.
 
 ## Features
 
