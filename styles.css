@@ -107,9 +107,8 @@ label{
 
 
 .footer {
-    width: 100vw;
+ 
     margin-top: 1rem;
-    
     color: var(--primary-text);
     background-color: var(--off-white);
     padding: 0rem 0.5rem 1rem 0.5rem;
